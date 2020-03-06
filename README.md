@@ -32,7 +32,7 @@ in order to close the container. When the container starts, you are in Bash comm
 ```bash
 jupyter lab --ip 0.0.0.0 --no-browser --allow-root
 ```
-and then JupyterLab is accessible on https://ipaddress:8888 where ipaddress is 127.0.0.1 if you use linux and ip of docker-machine if you use Windows with virtual machine. The ip of Dcoker machine can be found with
+and after this JupyterLab is accessible on https://ipaddress:8888 where ipaddress is 127.0.0.1 if you use linux and ip of the docker-machine if you use Windows with virtual machine. The ip of Docker machine can be found with
 ```bash
 docker-machine ip
 ```
