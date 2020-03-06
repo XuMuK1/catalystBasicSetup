@@ -15,7 +15,7 @@ On the other hand, the built image is available via DockerHub:
 ```bash
 sudo docker image pull xumukdocker/rljlabcatbase:1.0
 ```
-IMPORTANT: If you build the image from Dockerfile and not use the pulled one then use the name $rljlabcatbase:1.0$ (without $xumukdocker/$).
+IMPORTANT: If you build the image from Dockerfile and not use the pulled one then use the name rljlabcatbase:1.0 (without xumukdocker/).
 ## Running
 
 You can run the container with 
