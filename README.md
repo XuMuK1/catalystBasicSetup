@@ -9,11 +9,11 @@ There are two ways to deploy it.
 One way is to build the image by executing 
 
 ```bash
-sudo docker image build -t rljlabcatbase:1.0
+sudo docker image build -t rljlabcatbase:1.01
 ```
 On the other hand, the built image is available via DockerHub:
 ```bash
-sudo docker image pull xumukdocker/rljlabcatbase:1.0
+sudo docker image pull xumukdocker/rljlabcatbase:1.01
 ```
 IMPORTANT: If you build the image from Dockerfile and not use the pulled one then use the name rljlabcatbase:1.0 (without xumukdocker/).
 ## Running
@@ -21,7 +21,7 @@ IMPORTANT: If you build the image from Dockerfile and not use the pulled one the
 You can run the container with 
 
 ```bash
-sudo docker container run -it --publish 8888:8888 --name rldock xumukdocker/rljlabcatbase:1.0 
+sudo docker container run -it --publish 8888:8888 --name rldock xumukdocker/rljlabcatbase:1.01 
 ```
 Do not forget to use -rm flag or execute
 ```bash
@@ -36,3 +36,4 @@ and after this JupyterLab is accessible on https://ipaddress:8888 where ipaddres
 ```bash
 docker-machine ip
 ```
+There are runJupyterLab.sh and runJupyterNotebook.sh available immediately from /, sou you can run the Notebook server with ./runJupyterNotebook.sh after you run the container.

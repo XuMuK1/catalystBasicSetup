@@ -18,6 +18,17 @@ RUN pip3 install -r requirements.txt
 RUN pip3 install torch==1.4.0+cpu torchvision==0.5.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
 RUN python3 --version
 RUN pip3 install catalyst
+RUN pip3 install gym
+
+#configuring jupyter server
+#RUN jupyter notebook --generate-config
+#pass is 123 by default
+#RUN mkdir root
+#RUN mkdir root/.jupyter
+#COPY ./jupyter_notebook_config.py /root/.jupyter/jupyter_notebook_config.py
+COPY ./runJupyterNotebook.sh /runJupyterNotebook.sh
+COPY ./runJupyterLab.sh /runJupyterLab.sh
+
 
 #for some reasons....I suppose it can be deprecated
 #COPY . /
